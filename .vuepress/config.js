@@ -127,9 +127,54 @@ module.exports = {
     sidebar: [
       {
         title: '目录',
-        collapsable: false,
+        collapsable: true,
         path: '/'
-      }
+      }, {
+        title: '技术篇',
+        collapsable: true,
+        children: [
+          {
+            title: '计算机基础',
+            collapsable: true,
+            path: '/'
+          },
+          {
+            title: '编程语言',
+            collapsable: true,
+            path: '/'
+          },
+          {
+            title: '开发框架',
+            collapsable: true,
+            path: '/'
+          },
+          {
+            title: '中间件',
+            collapsable: true,
+            path: '/'
+          },
+          {
+            title: '架构设计',
+            collapsable: true,
+            path: '/'
+          }
+        ]
+      }, {
+        title: '管理篇',
+        collapsable: true,
+        children: [
+        ]
+      }, {
+        title: '职业篇',
+        collapsable: true,
+        children: [
+        ]
+      }, {
+        title: '个人随笔',
+        collapsable: true,
+        children: [
+        ]
+      },
     ]
   }
 };
