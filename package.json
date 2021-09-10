@@ -1,0 +1,44 @@
+{
+  "name": "awesome-fenix",
+  "version": "1.0.0",
+  "description": "explore architecture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev .",
+    "build": "vuepress build .",
+    "export": "vuepress export .",
+    "deoply:refresh-cdn": "node .vuepress/qcloud.cdn.refresh.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fenixsoft/awesome-fenix.git"
+  },
+  "author": "icyfenix@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fenixsoft/awesome-fenix/issues"
+  },
+  "homepage": "https://github.com/fenixsoft/awesome-fenix#readme",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.4.0",
+    "@vuepress/plugin-google-analytics": "^1.4.0",
+    "easy-pdf-merge": "^0.2.0",
+    "github-buttons": "^2.13.0",
+    "markdown-it-abbr": "^1.0.4",
+    "markdown-it-figure": "^0.2.0",
+    "markdown-it-ins": "^3.0.0",
+    "markdown-it-mermaid": "^0.2.5",
+    "markdown-it-smartarrows": "^1.0.1",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "moment": "^2.24.0",
+    "puppeteer": "^1.11.0",
+    "qcloud-cdn-node-sdk": "^1.0.0",
+    "vuepress": "^1.4.0",
+    "vuepress-plugin-comment": "^0.7.3"
+  },
+  "dependencies": {
+    "markdown-it-fontawesome": "^0.3.0"
+  }
+}
