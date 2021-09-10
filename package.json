@@ -1,7 +1,7 @@
 {
-  "name": "itliwei.github.io",
+  "name": "CTO修炼之路",
   "version": "1.0.0",
-  "description": "explore architecture",
+  "description": "不想当CTO的码农不是好码农",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/itliwei/itliwei.github.io.git"
   },
-  "author": "icyfenix@gmail.com",
+  "author": "itliwei@163.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/itliwei/itliwei.github.io/issues"
