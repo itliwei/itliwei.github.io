@@ -93,27 +93,6 @@ module.exports = {
           {
             text: '文档工程 Awesome-Fenix',
             link: 'https://github.com/itliwei/itliwei.github.io'
-          }, {
-            text: '前端工程 Fenix\'s Bookstore',
-            link: 'https://github.com/itliwei/fenix-bookstore-frontend'
-          }, {
-            text: '前端工程在线示例 Fenix\'s Bookstore',
-            link: 'https://bookstore.itliwei.github.io'
-          }, {
-            text: '后端：单体架构 Spring Boot',
-            link: 'https://github.com/itliwei/monolithic_arch_springboot'
-          }, {
-            text: '后端：微服务架构 Spring Cloud',
-            link: 'https://github.com/itliwei/microservice_arch_springcloud'
-          }, {
-            text: '后端：微服务架构 Kubernetes',
-            link: 'https://github.com/itliwei/microservice_arch_kubernetes'
-          }, {
-            text: '后端：微服务架构 Istio',
-            link: 'https://github.com/itliwei/servicemesh_arch_istio'
-          }, {
-            text: '后端：无服务架构 AWS Lambda',
-            link: 'https://github.com/itliwei/serverless_arch_awslambda'
           }
         ]
       },
