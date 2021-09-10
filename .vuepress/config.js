@@ -47,9 +47,9 @@ module.exports = {
           clientID: '5bd225c53de48289395f',
           // 如果你对"clientSecret"有疑问,可以参考 http://itliwei.github.io/architect-perspective/general-architecture/system-security/authorization.html#oauth2
           clientSecret: '5b596b9bdce76f2bdc3f896994bb9010c704f87c',
-          repo: 'awesome-fenix',
-          owner: 'fenixsoft',
-          admin: ['fenixsoft'],
+          repo: 'itliwei.github.io',
+          owner: 'itliwei',
+          admin: ['itliwei'],
           labels: ["Gitalk", "Comment"],
           id: '<%- ("itliwei.github.io" + (frontmatter.to.path || window.location.pathname)).slice(-50) %>',
           title: '「Comment」<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>',
@@ -81,7 +81,7 @@ module.exports = {
     logo: '/images/logo-color.png',
     lastUpdated: '最后更新',
     smoothScroll: true,
-    // repo: 'fenixsoft/awesome-fenix',
+    repo: 'itliwei/itliwei.github.io',
     editLinks: true,
     editLinkText: '在GitHub中编辑',
     // 添加导航栏
@@ -92,34 +92,34 @@ module.exports = {
         items: [
           {
             text: '文档工程 Awesome-Fenix',
-            link: 'https://github.com/fenixsoft/awesome-fenix'
+            link: 'https://github.com/itliwei/itliwei.github.io'
           }, {
             text: '前端工程 Fenix\'s Bookstore',
-            link: 'https://github.com/fenixsoft/fenix-bookstore-frontend'
+            link: 'https://github.com/itliwei/fenix-bookstore-frontend'
           }, {
             text: '前端工程在线示例 Fenix\'s Bookstore',
             link: 'https://bookstore.itliwei.github.io'
           }, {
             text: '后端：单体架构 Spring Boot',
-            link: 'https://github.com/fenixsoft/monolithic_arch_springboot'
+            link: 'https://github.com/itliwei/monolithic_arch_springboot'
           }, {
             text: '后端：微服务架构 Spring Cloud',
-            link: 'https://github.com/fenixsoft/microservice_arch_springcloud'
+            link: 'https://github.com/itliwei/microservice_arch_springcloud'
           }, {
             text: '后端：微服务架构 Kubernetes',
-            link: 'https://github.com/fenixsoft/microservice_arch_kubernetes'
+            link: 'https://github.com/itliwei/microservice_arch_kubernetes'
           }, {
             text: '后端：微服务架构 Istio',
-            link: 'https://github.com/fenixsoft/servicemesh_arch_istio'
+            link: 'https://github.com/itliwei/servicemesh_arch_istio'
           }, {
             text: '后端：无服务架构 AWS Lambda',
-            link: 'https://github.com/fenixsoft/serverless_arch_awslambda'
+            link: 'https://github.com/itliwei/serverless_arch_awslambda'
           }
         ]
       },
       {
         text: 'PDF下载',
-        link: 'https://raw.githubusercontent.com/fenixsoft/awesome-fenix/gh-pages/pdf/the-fenix-project.pdf',
+        link: '',
         target: "_blank"
       },
       {text: '讨论区', link: '/board/', target: "_self"}

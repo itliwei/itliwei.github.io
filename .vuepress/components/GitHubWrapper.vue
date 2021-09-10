@@ -12,7 +12,7 @@
     export default {
         name: "GitHubWrapper",
         mounted() {
-            const GIT_PREFIX = 'https://raw.githubusercontent.com/fenixsoft/awesome-fenix/master/.vuepress/public/images'
+            const GIT_PREFIX = 'https://raw.githubusercontent.com/itliwei/itliwei.github.io/master/.vuepress/public/images'
             const ICYFENIX_CN = 'https://itliwei.github.io/images/'
             let raw = this.$refs.github_raw;
             let images = raw.querySelectorAll(`img[src^='${GIT_PREFIX}']`)

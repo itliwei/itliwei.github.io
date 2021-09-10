@@ -7,8 +7,8 @@
     <div class="git-hub-star" v-if="showGitStar">
       <span class="prefix" v-if="pageWords > 0">
         Kudos to
-        <github-button href="https://github.com/fenixsoft/awesome-fenix" data-icon="octicon-star" data-show-count="true"
-                       aria-label="Star fenixsoft/awesome-fenix on GitHub"
+        <github-button href="https://github.com/itliwei/itliwei.github.io" data-icon="octicon-star" data-show-count="true"
+                       aria-label="Star itliwei/itliwei.github.io on GitHub"
                        style="position: relative; top: 4px; right: -4px;">
         Star
       </github-button>

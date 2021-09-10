@@ -1,5 +1,5 @@
 {
-  "name": "awesome-fenix",
+  "name": "itliwei.github.io",
   "version": "1.0.0",
   "description": "explore architecture",
   "main": "index.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fenixsoft/awesome-fenix.git"
+    "url": "git+https://github.com/itliwei/itliwei.github.io.git"
   },
   "author": "icyfenix@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fenixsoft/awesome-fenix/issues"
+    "url": "https://github.com/itliwei/itliwei.github.io/issues"
   },
-  "homepage": "https://github.com/fenixsoft/awesome-fenix#readme",
+  "homepage": "https://github.com/itliwei/itliwei.github.io#readme",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.4.0",
     "@vuepress/plugin-google-analytics": "^1.4.0",
