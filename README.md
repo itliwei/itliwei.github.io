@@ -19,83 +19,47 @@
 </GitHubWrapper>
 
 
-## 这是什么？
+## 写在前面的话
 
-这是一部以“如何构建一套可靠的分布式大型软件系统”为叙事主线的开源文档，是一幅帮助开发人员整理现代软件架构各条分支中繁多知识点的技能地图。文章《<a href="https://icyfenix.cn/introduction/about-the-fenix-project.html">什么是“凤凰架构”</a>》详细阐述了这部文档的主旨、目标与名字的来由，文章《<a href="https://icyfenix.cn/exploration/guide/quick-start.html">如何开始</a>》简述了文档每章讨论的主要话题与内容详略分布，供阅前参考。
+### 为什么开始
 
-笔者出于以下目的，撰写这部文档：
+- **取之于网民，还之于网民**
 
-- 笔者从事大型企业级软件的架构研发工作，借此机会，系统性地整理自己的知识，查缺补漏，将它们都融入既有的知识框架之中。
-- 笔者正式出版的前七本计算机技术书籍都不是与自己本职工作直接相关，能按照自己的兴趣去写作，还能获得不菲的经济报酬是一件很快乐的事情；而撰写一部工作中能直接使用的、能随时更新、与人交流的在线文档，同样也是一件很实用、很有价值的事情。
-- 笔者认为技术人员成长有一“捷径”，学技术不仅要去看、去读、去想、去用，更要去说、去写。将自己“认为掌握了的”知识叙述出来，能够说得有条理清晰，讲得理直气壮；能够让他人听得明白，释去心中疑惑；能够把自己的观点交予别人的审视，乃至质疑，在此过程之中，会挖掘出很多潜藏在“已知”背后的“未知”。未有知而不行者，知而不行，只是未知。
+从业8年来，遇到各种各样问题，做过各种各样产品，实现过各种各样需求。每一次感觉自己毫无头绪、无从下手之时，从互联网上各大网友那求助，让我意外的是最终总能找到各种"奇巧淫技"，让我茅塞顿开，豁然开朗。从而一步步抽丝剥茧逐步深入，到最后顺利完成渡过难关。那种无中生有、一路披荆斩棘带给我的幸福感无以言表。所以，一直以来我对互联网都怀有无限的敬畏之心，尤其是互联网人，感觉他们像一群天外飞仙一般，有求必应无所不能。让我内心深处感到，原来在这个世界，自己从未孤单。每次遇到困难的时候，我会越来越泰然。哎，先问问网友有没有遇到过！
 
-除文档部分外，笔者同时还建立了若干配套的代码工程，这是针对不同架构、技术方案（如单体架构、微服务、服务网格、无服务架构，等等）的演示程序。它们既是文档中所述知识的实践示例，亦可作为实际项目新创建时的可参考引用的基础代码。
+我遇到的坎坷他们都层遇到过，我经历的挫折他们也同样都层经历过。然而，他们经历过之后也未曾忘记自己是如何度过难关的，来告诉未来人。谢谢你们的陪伴，陪我了这么多年以后也会一起做够更长的路。
 
-<p align="center" style="display:none" tips="view only in GitHub README.md">
-<img src="https://raw.githubusercontent.com/fenixsoft/awesome-fenix/master/.vuepress/public/images/sshot-index.png" >
-</p>
+所以我也决定，自己未来也能够陪伴更多的人。让这种从未孤单，并肩作战的精神传递下去。
 
-## 如何使用？
+- **信息爆炸，垃圾信息肆虐**
 
-根据“使用”的所指含义的不同，笔者列举以下几种情况：
+不过，不少网民出于各种目的，比如流量、比如自我表达、甚至比如名利等各种各样的目的会生产出大量垃圾信息，肆虐在你我的世界。我们每次需要检索信息的时候，都要谨慎甄别这是不是我想要的信息，我们一不小心就会进入他们的垃圾世界，然后等知道是垃圾的时候，已经在他们的世界里浪费了大批生命。什么样的信息是垃圾信息呢？我感觉有以下几种：
 
-- **在线阅读**：本文档在线阅读地址为：[https://icyfenix.cn](https://icyfenix.cn)。<br/>网站由 [GitHub Pages](https://pages.github.com/) 提供网站存储空间；由 [Travis-CI](https://travis-ci.com/fenixsoft/awesome-fenix) 提供的持续集成服务实时把 Git 仓库的 Markdown 文档编译同步至网站，并推送至 CDN，提供国内的访问加速。
+1. 一味抄袭，无。没有个人的任何观点，一味的从一个平台抄到了另一个平台。有没有遇到过同一篇文章在好几个平台上，甚至同一篇文章在同一个平台上就有好几个。这无疑增加了我们的检索成本，会反复查看同一信息。
+2. 不明其说，不知所云。说了半天不知道在说什么，因为作者也不知道在说什么。
+3. 只说现象，不说逻辑。比如添加一个注解就解决了，但是怎么解决的呢？设置一个参数就解决了，但是怎么解决的呢？有心的读者会继续探索，无心的读者也止步于此。
+4. 不够美观，样式难看。本身是一盘好菜，也很有营养，但是长得像一坨便便，请问谁乐意去吃？类似的论文很多。
 
-- **离线阅读**：
+- **改变世界，从我做起**
 
-  - 部署离线站点：文档基于 [Vuepress](https://vuepress.vuejs.org/zh/) 构建，如你希望在企业内部搭建文档站点，请使用如下命令：
+从业8年来，从一无所知的互联网职场小白，到资深的技术专家，从 hello world 到 技术架构。
 
-    ```bash
-    # 克隆获取源码
-    $ git clone https://github.com/fenixsoft/awesome-fenix.git && cd awesome-fenix
+丰富的工作经验，曾担任过技术经理、做过基础架构，也做过业务架构。
 
-    # 安装工程依赖
-    $ npm install
+有过一线、二线、三线互联网创业公司，熟悉不同级别的公司的工作逻辑和方法。
 
-    # 运行网站，地址默认为http://localhost:8080
-    $ npm run dev
-    ```
+担任过两年的技术学院院长，负责企业的内部培训与分享，而自身也是一个比较乐于表达与分享的人。
 
-  - 生成PDF文件：工程源码中已带有基于 [vuepress-plugin-export](https://github.com/ulivz/vuepress-plugin-export) 改造（针对本文档定制过）的PDF导出插件，如你希望生成全文 PDF 文件，请在已进行上一步工程克隆和依赖安装的前提下使用如下命令：
+也尝试着让自己对技术、管理甚至职场更深入和专业，同时也试着让自己的思想与表达让更多人能接受。
 
-    ```bash
-    # 编译PDF，结果将输出在网站根目录
-    $ npm run export
-    ```
-    PDF 全文编译时间较长，在笔者机器上约耗时25分钟，在 Travis-CI 上约需要约8分钟，可以从在[这里下载](https://raw.githubusercontent.com/fenixsoft/awesome-fenix/gh-pages/pdf/the-fenix-project.pdf)更新时由 Travis-CI 自动编译的PDF。PDF 中文字体采用阿里巴巴普惠字体渲染，此字体被允许免费使用与传播。
+最重要的一点是，让更多人感受到，你并不孤单，让我们并肩作战！
 
-- **二次演绎、传播和发行**：本文档中所有的内容，如引用其他资料，均在文档中明确列出资料来源，一切权利归属原作者。除此以外的所有内容，包括但不限于文字、图片、表格，等等，均属笔者原创，这些原创内容，笔者声明以[知识共享署名 4.0](http://creativecommons.org/licenses/by/4.0/)发行，只要遵循许可协议条款中**署名**、**非商业性使用**、**相同方式共享**的条件，你可以在任何地方、以任何形式、向任何人使用、修改、演绎、传播本文档中任何部分的内容。详细可见本文档的“协议”一节。
+### 未来的愿景
 
-- **运行技术演示工程**：笔者专门在探索起步中的“<a href="https://icyfenix.cn/exploration/projects/">技术演示工程</a>”详细介绍了配套工程的使用方法，如果你对构建运行环境也有所疑问，在附录中的“<a href="https://icyfenix.cn/appendix/deployment-env-setup/">环境依赖</a>”部分也已包括了详细的环境搭建步骤。此外，这些配套工程也均有使用 Travis-CI 提供的持续集成服务，自动输出到 Docker 镜像库，如果你只关心运行效果，或只想了解部分运维方面的知识，可以直接运行 Docker 镜像而无需关心代码部分。你可以通过下面所列的地址，查看到本文档所有工程代码和在线演示的地址：
+成为一线互联网工程师的入门手册！
 
-  - 文档工程：
-    - 凤凰架构：[https://icyfenix.cn](https://icyfenix.cn)
-    - Vuepress 支持的文档工程：[https://github.com/fenixsoft/awesome-fenix](https://github.com/fenixsoft/awesome-fenix)
-  - 前端工程：
-    - Mock.js 支持的纯前端演示：[https://bookstore.icyfenix.cn](https://bookstore.icyfenix.cn)
-    - Vue.js 2实现前端工程：[https://github.com/fenixsoft/fenix-bookstore-frontend](https://github.com/fenixsoft/fenix-bookstore-frontend)
-  - 后端工程：
-    - Spring Boot 实现单体架构：[https://github.com/fenixsoft/monolithic_arch_springboot](https://github.com/fenixsoft/monolithic_arch_springboot)
-    - Spring Cloud 实现微服务架构：[https://github.com/fenixsoft/microservice_arch_springcloud](https://github.com/fenixsoft/microservice_arch_springcloud)
-    - Kubernetes 为基础设施的微服务架构：[https://github.com/fenixsoft/microservice_arch_kubernetes](https://github.com/fenixsoft/microservice_arch_kubernetes)
-    - Istio 为基础设施的服务网格架构：[https://github.com/fenixsoft/servicemesh_arch_istio](https://github.com/fenixsoft/servicemesh_arch_istio)
-    - AWS Lambda 为基础的无服务架构：[https://github.com/fenixsoft/serverless_arch_awslambda](https://github.com/fenixsoft/serverless_arch_awslambda)
+弯路必不可少，但是能否让更多的互联网工程师走更少的弯路呢？
 
 
 
-## 协议
-
-- 本作品代码部分采用 [Apache 2.0协议](https://www.apache.org/licenses/LICENSE-2.0)进行许可。遵循许可的前提下，你可以自由地对代码进行修改，再发布，可以将代码用作商业用途。但要求你：
-  - **署名**：在原有代码和衍生代码中，保留原作者署名及代码来源信息。
-  - **保留许可证**：在原有代码和衍生代码中，保留Apache 2.0协议文件。
-
-- 本作品文档部分采用[知识共享署名 4.0 国际许可协议](http://creativecommons.org/licenses/by/4.0/)进行许可。 遵循许可的前提下，你可以自由地共享，包括在任何媒介上以任何形式复制、发行本作品，亦可以自由地演绎、修改、转换或以本作品为基础进行二次创作。但要求你：
-  - **署名**：应在使用本文档的全部或部分内容时候，注明原作者及来源信息。
-  - **非商业性使用**：不得用于商业出版或其他任何带有商业性质的行为。如需商业使用，请联系作者。
-  - **相同方式共享的条件**：在本文档基础上演绎、修改的作品，应当继续以知识共享署名 4.0国际许可协议进行许可。
-
-<div style="padding-top: 20px" class="not-print">
-	<h2 id="备案">备案</h2>
-	<p>网站备案信息：<a href="http://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">粤ICP备18088957号-1</a></p>
-</div>
 
