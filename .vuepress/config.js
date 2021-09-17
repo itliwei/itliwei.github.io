@@ -116,26 +116,26 @@ module.exports = {
             collapsable: true,
             path: '/'
           },
-          {
-            title: '编程语言',
-            collapsable: true,
-            path: '/'
-          },
-          {
-            title: '开发框架',
-            collapsable: true,
-            path: '/'
-          },
-          {
-            title: '中间件',
-            collapsable: true,
-            path: '/'
-          },
-          {
-            title: '架构设计',
-            collapsable: true,
-            path: '/'
-          }
+          // {
+          //   title: '编程语言',
+          //   collapsable: true,
+          //   path: '/'
+          // },
+          // {
+          //   title: '开发框架',
+          //   collapsable: true,
+          //   path: '/'
+          // },
+          // {
+          //   title: '中间件',
+          //   collapsable: true,
+          //   path: '/'
+          // },
+          // {
+          //   title: '架构设计',
+          //   collapsable: true,
+          //   path: '/'
+          // }
         ]
       }, {
         title: '管理篇',
@@ -146,6 +146,11 @@ module.exports = {
         title: '职业篇',
         collapsable: true,
         children: [
+          {
+            title: '工程师的人生观',
+            collapsable: true,
+            path: '/occupation/'
+          }
         ]
       }, {
         title: '个人随笔',
@@ -153,6 +158,45 @@ module.exports = {
         children: [
         ]
       },
+      {
+        title: '话题讨论',
+        collapsable: true,
+        path: '/topic/',
+        children: [
+          {
+            title: '元宇宙',
+            collapsable: true,
+            path: '/topic/Metaverse'
+          },
+          {
+            title: '区块链',
+            collapsable: true,
+            path: '/topic/blockchain'
+          },
+          {
+            title: '云原生',
+            collapsable: true,
+            path: '/topic/cloudnative'
+          }
+        ]
+      },
+      {
+        title: '天天向上',
+        collapsable: true,
+        path: '/daydayup/',
+        children: [
+          {
+            title: '赌徒破产问题',
+            collapsable: true,
+            path: '/daydayup/GamblersRuinProblem'
+          },
+          {
+            title: '归因理论',
+            collapsable: true,
+            path: '/daydayup/AttributionTheory'
+          }
+        ]
+      }
     ]
   }
 };

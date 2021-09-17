@@ -1,5 +1,5 @@
 
-#归因理论(Attribution Theory)
+# 归因理论(Attribution Theory)
 
 
 
