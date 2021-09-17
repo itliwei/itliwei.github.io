@@ -44,9 +44,8 @@ module.exports = {
       {
         choosen: 'gitalk',
         options: {
-          clientID: '5bd225c53de48289395f',
-          // 如果你对"clientSecret"有疑问,可以参考 http://itliwei.github.io/architect-perspective/general-architecture/system-security/authorization.html#oauth2
-          clientSecret: '5b596b9bdce76f2bdc3f896994bb9010c704f87c',
+          clientID: 'e81420c5bf8a0d1753e6',
+          clientSecret: 'e0e999d0df90fccf32cc6d4a79b7c248634f7a30',
           repo: 'itliwei.github.io',
           owner: 'itliwei',
           admin: ['itliwei'],
