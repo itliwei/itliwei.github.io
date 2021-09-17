@@ -101,7 +101,7 @@ module.exports = {
         link: '',
         target: "_blank"
       },
-      //{text: '讨论区', link: '/board/', target: "_self"}
+      {text: '讨论区', link: '/board/', target: "_self"}
     ],
     sidebar: [
       {
@@ -197,7 +197,7 @@ module.exports = {
             path: '/daydayup/AttributionTheory'
           },
         ]
-      },
+      }
     ]
   }
 };
