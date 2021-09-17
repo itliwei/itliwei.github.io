@@ -151,7 +151,7 @@ module.exports = {
             title: '工程师的人生观',
             collapsable: true,
             path: '/occupation/'
-          },
+          }
         ]
       }, {
         title: '个人随笔',
@@ -178,7 +178,7 @@ module.exports = {
             title: '云原生',
             collapsable: true,
             path: '/topic/cloudnative'
-          },
+          }
         ]
       },
       {
@@ -195,7 +195,7 @@ module.exports = {
             title: '归因理论',
             collapsable: true,
             path: '/daydayup/AttributionTheory'
-          },
+          }
         ]
       }
     ]
