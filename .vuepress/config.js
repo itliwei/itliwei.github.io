@@ -108,7 +108,7 @@ module.exports = {
         collapsable: true,
         path: '/'
       }, {
-        title: '技术篇',
+        title: '技术管理',
         collapsable: true,
         children: [
           {
@@ -138,12 +138,7 @@ module.exports = {
           // }
         ]
       }, {
-        title: '管理篇',
-        collapsable: true,
-        children: [
-        ]
-      }, {
-        title: '职业篇',
+        title: '职业发展',
         collapsable: true,
         children: [
           {
@@ -153,7 +148,7 @@ module.exports = {
           }
         ]
       }, {
-        title: '个人随笔',
+        title: '读书笔记',
         collapsable: true,
         children: [
         ]
@@ -194,6 +189,11 @@ module.exports = {
             title: '归因理论',
             collapsable: true,
             path: '/daydayup/AttributionTheory'
+          },
+          {
+            title: '凯丽判断',
+            collapsable: true,
+            path: '/daydayup/KellyCriterion'
           }
         ]
       }
