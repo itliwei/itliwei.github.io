@@ -110,11 +110,19 @@ module.exports = {
       }, {
         title: '技术管理',
         collapsable: true,
+        path: '/technology/',
         children: [
           {
-            title: '计算机基础',
+            title: '基础篇',
             collapsable: true,
-            path: '/'
+            path: '/technology/base/',
+            children: [
+              {
+                title: 'DNS原理分析',
+                collapsable: true,
+                path: '/technology/base/dns',
+              }
+          ]
           },
           // {
           //   title: '编程语言',
