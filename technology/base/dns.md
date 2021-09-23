@@ -14,6 +14,13 @@ DNS （Domain Name System 的缩写）的作用非常简单，就是根据域名
 
 ### 一个DNS解析的过程
 
+从一个命令 `dig` 开始
+
+``dig itliwei.github.com``
+
+![img.png](technology/imgs/dns2.png)
+
+
 ### DNS工作原理
 
 ### 编程思想
