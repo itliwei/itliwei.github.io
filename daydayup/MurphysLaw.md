@@ -1,5 +1,5 @@
 
-# 墨菲定律(Murphy's Law)
+# 20210917 墨菲定律(Murphy's Law)
 
 墨菲定律（Murphy's Law），亦称莫非定律、莫非定理、或摩菲定理，是西方世界常用的俚语。墨菲定律主要内容是：事情如果有变坏的可能，不管这种可能性有多小，它总会发生（Anything that can go wrong will go wrong）。
 

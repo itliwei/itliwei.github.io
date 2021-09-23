@@ -1,5 +1,5 @@
 
-# 赌徒破产问题(Gambler's Ruin Problem)
+# 20210915-赌徒破产问题(Gambler's Ruin Problem)
 
 :::tip 没有银弹
 

@@ -1,5 +1,5 @@
 
-# 凯丽判断(Kelly Criterion)
+# 20210918 凯丽判断(Kelly Criterion)
 
 
 
