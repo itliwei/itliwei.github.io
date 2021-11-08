@@ -108,12 +108,24 @@ module.exports = {
         collapsable: true,
         path: '/'
       }, {
-        title: '技术管理',
+        title: '架构思维',
         collapsable: true,
         path: '/technology/',
         children: [
           {
-            title: '基础篇',
+            title: '工程师基础',
+            collapsable: true,
+            path: '/technology/engineer/',
+            children: [
+              {
+                title: '环境搭建',
+                collapsable: true,
+                path: '/technology/engineer/devenv',
+              }
+            ]
+          },
+          {
+            title: '计算机基础',
             collapsable: true,
             path: '/technology/base/',
             children: [
