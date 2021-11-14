@@ -152,7 +152,7 @@ module.exports = {
                 path: '/technology/microservice/architecture',
               }
             ]
-          },
+          }
           // {
           //   title: '编程语言',
           //   collapsable: true,
