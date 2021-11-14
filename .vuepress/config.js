@@ -216,28 +216,6 @@ module.exports = {
             path: '/daydayup/KellyCriterion'
           }
         ]
-      },
-      {
-        title: '面试真经',
-        collapsable: true,
-        path: '/interview/',
-        children: [
-          {
-            title: '基础篇',
-            collapsable: true,
-            path: '/interview/base'
-          },
-          {
-            title: '实战篇',
-            collapsable: true,
-            path: '/interview/action'
-          },
-          {
-            title: '终结篇',
-            collapsable: true,
-            path: '/interview/end'
-          }
-        ]
       }
     ]
   }
