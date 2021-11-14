@@ -136,6 +136,23 @@ module.exports = {
               }
           ]
           },
+          {
+            title: '架构设计',
+            collapsable: true,
+            path: '/technology/microservice/',
+            children: [
+              {
+                title: '架构思想',
+                collapsable: true,
+                path: '/technology/microservice/README',
+              },
+              {
+                title: '架构演变',
+                collapsable: true,
+                path: '/technology/microservice/architecture',
+              }
+            ]
+          },
           // {
           //   title: '编程语言',
           //   collapsable: true,
