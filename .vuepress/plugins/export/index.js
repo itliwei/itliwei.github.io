@@ -122,7 +122,7 @@ async function generatePDF(ctx, port, host) {
         }, scriptToInject);
 
         if (url === "/") {
-            title = "CTO修炼之路"
+            title = "架构师手册"
         }
 
         await browserPage.pdf({

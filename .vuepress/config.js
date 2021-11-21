@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'CTO修炼之路',
-  description: '不想当CTO的码农不是好码农',
+  title: '架构师手册',
+  description: '耐心，专注，坚持。',
   head: [
     ['link', {rel: 'shortcut icon', type: "image/x-icon", href: `/favicon.ico`}]
   ],
@@ -168,16 +168,6 @@ module.exports = {
           //   collapsable: true,
           //   path: '/'
           // }
-        ]
-      }, {
-        title: '职业发展',
-        collapsable: true,
-        children: [
-          {
-            title: '工程师的人生观',
-            collapsable: true,
-            path: '/occupation/'
-          }
         ]
       }, {
         title: '读书笔记',

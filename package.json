@@ -1,7 +1,7 @@
 {
   "name": "itliwei.github.io",
   "version": "1.0.0",
-  "description": "不想当CTO的码农不是好码农",
+  "description": "耐心，专注，坚持。",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
