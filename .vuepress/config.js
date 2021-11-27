@@ -85,21 +85,21 @@ module.exports = {
     editLinkText: '在GitHub中编辑',
     // 添加导航栏
     nav: [
-      {text: '首页', link: '/'}, {
-        text: '代码',
-        // 这里是下拉列表展现形式。
-        items: [
-          {
-            text: '文档工程 Awesome-Fenix',
-            link: 'https://github.com/itliwei/itliwei.github.io'
-          }
-        ]
-      },
-      {
-        text: 'PDF下载',
-        link: '',
-        target: "_blank"
-      },
+      // {text: '首页', link: '/'}, {
+      //   text: '代码',
+      //   // 这里是下拉列表展现形式。
+      //   items: [
+      //     {
+      //       text: '文档工程 Awesome-Fenix',
+      //       link: 'https://github.com/itliwei/itliwei.github.io'
+      //     }
+      //   ]
+      // },
+      // {
+      //   text: 'PDF下载',
+      //   link: '',
+      //   target: "_blank"
+      // },
       {text: '讨论区', link: '/board/', target: "_self"}
     ],
     sidebar: [
@@ -108,66 +108,173 @@ module.exports = {
         collapsable: true,
         path: '/'
       }, {
-        title: '架构思维',
+        title: '架构师基础手册',
         collapsable: true,
-        path: '/technology/',
+        path: '/technology/engineer',
         children: [
-          {
-            title: '工程师基础',
-            collapsable: true,
-            path: '/technology/engineer/',
-            children: [
-              {
-                title: '环境搭建',
-                collapsable: true,
-                path: '/technology/engineer/devenv',
-              }
-            ]
-          },
           {
             title: '计算机基础',
             collapsable: true,
-            path: '/technology/base/',
+            path: '/technology/engineer/base',
             children: [
               {
                 title: 'DNS原理分析',
                 collapsable: true,
-                path: '/technology/base/dns',
+                path: '/technology/engineer/base/dns',
+              },
+              {
+                title: 'HTTP原理分析',
+                collapsable: true,
+                path: '/technology/engineer/base/http',
               }
-          ]
+            ]
+          },
+          {
+            title: '工程基础',
+            collapsable: true,
+            path: '/technology/engineer/develop',
+            children: [
+              {
+                title: '开发环境',
+                collapsable: true,
+                path: '/technology/engineer/develop/devenv',
+              },
+              {
+                title: '常用软件',
+                collapsable: true,
+                path: '/technology/engineer/develop/software',
+              }
+            ]
+          }
+        ]
+      },{
+        title: '架构师工程手册',
+        collapsable: true,
+        path: '/technology/architecture',
+        children: [
+          {
+            title: '架构理论',
+            collapsable: true,
+            path: '/technology/architecture/base',
+            children: [
+              {
+                title: 'CAP理论',
+                collapsable: true,
+                path: '/technology/architecture/base/cap',
+              },
+              {
+                title: '分布式理论',
+                collapsable: true,
+                path: '/technology/architecture/base/distributed',
+              },
+              {
+                title: '微服务理论',
+                collapsable: true,
+                path: '/technology/architecture/base/microservice',
+              },
+            ]
           },
           {
             title: '架构设计',
             collapsable: true,
-            path: '/technology/microservice/',
+            path: '/technology/architecture/case',
             children: [
               {
-                title: '架构演变',
+                title: '在线IM设计',
                 collapsable: true,
-                path: '/technology/microservice/architecture',
+                path: '/technology/architecture/case/imonline',
               }
             ]
           }
-          // {
-          //   title: '编程语言',
-          //   collapsable: true,
-          //   path: '/'
-          // },
-          // {
-          //   title: '开发框架',
-          //   collapsable: true,
-          //   path: '/'
-          // },
-          // {
-          //   title: '中间件',
-          //   collapsable: true,
-          //   path: '/'
-          // },
-          // {
-          //   title: '架构设计',
-          //   collapsable: true,
-          //   path: '/'
-          // }
+        ]
+      },{
+        title: '架构师源码手册',
+        collapsable: true,
+        path: '/technology/sourcecode',
+        children: [
+          {
+            title: '语言源码',
+            collapsable: true,
+            path: '/technology/sourcecode/language',
+            children: [
+              {
+                title: 'JDK源码',
+                collapsable: true,
+                path: '/technology/sourcecode/language/jdk',
+              },
+              {
+                title: 'JVM源码',
+                collapsable: true,
+                path: '/technology/sourcecode/language/jvm',
+              }
+            ]
+          },
+          {
+            title: '开发框架源码',
+            collapsable: true,
+            path: '/technology/sourcecode/framework',
+            children: [
+              {
+                title: 'Spring源码',
+                collapsable: true,
+                path: '/technology/sourcecode/spring',
+              },
+              {
+                title: 'MyBatis源码',
+                collapsable: true,
+                path: '/technology/sourcecode/mybatis',
+              },
+              {
+                title: 'Netty源码',
+                collapsable: true,
+                path: '/technology/sourcecode/netty',
+              },
+              {
+                title: 'Dubbo源码',
+                collapsable: true,
+                path: '/technology/sourcecode/dubbo',
+              }
+            ]
+          },
+          {
+            title: '中间件源码',
+            collapsable: true,
+            path: '/technology/sourcecode/middleware',
+            children: [
+              {
+                title: 'Redis源码',
+                collapsable: true,
+                path: '/technology/sourcecode/middleware/reds',
+              },
+              {
+                title: 'RocketMQ源码',
+                collapsable: true,
+                path: '/technology/sourcecode/middleware/rocketmq',
+              },
+              {
+                title: 'Kafka源码',
+                collapsable: true,
+                path: '/technology/sourcecode/middleware/kafka',
+              },
+              {
+                title: 'Etcd源码',
+                collapsable: true,
+                path: '/technology/sourcecode/middleware/etcd',
+              }
+            ]
+          },
+          {
+            title: '应用源码',
+            collapsable: true,
+            path: '/technology/sourcecode/server',
+            children: [
+              {
+                title: 'Apollo源码',
+                collapsable: true,
+                path: '/technology/sourcecode/server/apollo',
+              }
+            ]
+          }
         ]
       }, {
         title: '读书笔记',
@@ -218,7 +325,26 @@ module.exports = {
             path: '/daydayup/KellyCriterion'
           }
         ]
-      }
+      },
+      // {
+      //   title: '个人OKR',
+      //   collapsable: true,
+      //   path: '/OKR/',
+      //   children: [
+      //     {
+      //       title: '2022OKR',
+      //       collapsable: true,
+      //       path: '/OKR/2022-OKR',
+      //       children: [
+      //         {
+      //           title: '2022-Q1-OKR',
+      //           collapsable: true,
+      //           path: '/OKR/2022-OKR/2022-Q1-OKR'
+      //         }
+      //       ]
+      //     }
+      //   ]
+      // },
     ]
   }
 };
