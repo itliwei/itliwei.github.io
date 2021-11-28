@@ -118,12 +118,12 @@ module.exports = {
             path: '/technology/engineer/base',
             children: [
               {
-                title: 'DNS原理分析',
+                title: '一文了解DNS原理',
                 collapsable: true,
                 path: '/technology/engineer/base/dns',
               },
               {
-                title: 'HTTP原理分析',
+                title: '一文了解HTTP原理',
                 collapsable: true,
                 path: '/technology/engineer/base/http',
               }
@@ -143,6 +143,18 @@ module.exports = {
                 title: '常用软件',
                 collapsable: true,
                 path: '/technology/engineer/develop/software',
+              }
+            ]
+          },
+          {
+            title: '技术基础',
+            collapsable: true,
+            path: '/technology/engineer/tech',
+            children: [
+              {
+                title: '一文了解Flink',
+                collapsable: true,
+                path: '/technology/engineer/tech/flink',
               }
             ]
           }
