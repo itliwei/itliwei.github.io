@@ -244,7 +244,7 @@ module.exports = {
               {
                 title: 'Redis源码',
                 collapsable: true,
-                path: '/technology/sourcecode/middleware/reds',
+                path: '/technology/sourcecode/middleware/redis',
               },
               {
                 title: 'RocketMQ源码',

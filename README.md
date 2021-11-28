@@ -11,7 +11,7 @@
 <p align="center" class="print-break">
 	<GithubInfos />
     <a href="https://itliwei.github.io" style="display:inline-block"><words type='updated' /></a>
-    <a href="https://travis-ci.com/itliwei/itliwei.github.io" target="_blank" style="display:inline-block" class="not-print"><img src="https://api.travis-ci.com/itliwei/itliwei.github.io.svg?branch=master" alt="Travis-CI"></a>
+    <a href="https://travis-ci.com/github/itliwei/itliwei.github.io" target="_blank" style="display:inline-block" class="not-print"><img src="https://api.travis-ci.com/itliwei/itliwei.github.io.svg?branch=master" alt="Travis-CI"></a>
     <a href="/summary/"  style="display:inline-block"><words type='badge' chapter='/'/></a>
     <a href="https://itliwei.github.io/introduction/about-me.html" target="_blank" style="display:inline-block"><img src="https://raw.githubusercontent.com/itliwei/itliwei.github.io/master/.vuepress/public/images/Author-IcyFenix-blue.svg" alt="About Author"></a>
 	<PublishInfos />
