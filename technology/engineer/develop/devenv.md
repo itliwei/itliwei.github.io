@@ -33,16 +33,16 @@ Git作为现在一统天下的代码仓库管理工具，基本上得到了普�
 
     $ git config --global user.email itliwei@163.com
 
-## 3. maven安装
+## 3. aven安装
 
-maven作为老牌的jar包仓库管理工具，目前使用的非常广泛，笔者目前就职的公司都是使用maven。
+Maven作为老牌的jar包仓库管理工具，目前使用的非常广泛，笔者目前就职的公司都是使用maven。
 
   使用 brew install maven 安装
 
   编辑setting.xml
 
 
-## 4. 安装JDK
+## 4. JDK安装
 
 安装包地址：JDK1.8 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
@@ -55,7 +55,7 @@ maven作为老牌的jar包仓库管理工具，目前使用的非常广泛，笔
     export PATH
     export CLASSPATH
 
-## 5. 安装IDE
+## 5. IDE安装
 
 作为如今如火如荼的IDEA开发IDE工具，基本上属于每一位工程师的选择。
 
