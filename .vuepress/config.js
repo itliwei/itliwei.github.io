@@ -162,7 +162,7 @@ module.exports = {
             ]
           },
           {
-            title: '技术基础',
+            title: '技术文档',
             collapsable: true,
             path: '/technology/engineer/tech',
             children: [
