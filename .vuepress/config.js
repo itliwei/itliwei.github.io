@@ -260,6 +260,16 @@ module.exports = {
                 title: 'Etcd源码',
                 collapsable: true,
                 path: '/technology/sourcecode/middleware/etcd',
+              },
+              {
+                title: 'Flink源码',
+                collapsable: true,
+                path: '/technology/sourcecode/middleware/flink',
+              },
+              {
+                title: 'Doris源码',
+                collapsable: true,
+                path: '/technology/sourcecode/middleware/doris',
               }
             ]
           },
