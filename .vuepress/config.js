@@ -217,7 +217,7 @@ module.exports = {
                 path: '/technology/architecture/case/imonline',
               },
               {
-                title: '分控系统设计',
+                title: '风控系统设计',
                 collapsable: true,
                 path: '/technology/architecture/case/imonline',
               },
