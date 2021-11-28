@@ -5,9 +5,9 @@ Flink是一个流处理计算框架，它底层基于流处理引擎，实现了
 我们按照具体的业务需求将window划分为KeyedWindow以及Non-KeyedWindow，如果是KeyedWindow那么它会有多个并行度来计算窗口中的数据，比如统计同一用户在5分钟内不同的登录IP地址数，对于Non-KeyedWindow的并行度则为1，比如统计5分钟内网站PV。
 
 如下图所示：
-
+:::center
 ![img](https://img-blog.csdnimg.cn/20190527105020635.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3MTQyMzQ2,size_16,color_FFFFFF,t_70)
-
+:::
 ### Window的生命周期
 
 当属于该窗口的第一个元素到达时就会创**建该窗口**，当时间(event/process time)超过窗口的**结束时间戳+用户指定的延迟时间**，窗口将被移除(仅限time-based window)。比如对于一个每5分钟创建Tumbling Windows(即滚动窗口)窗口，允许1分钟的时延，Flink将会在12:00到12:05这段时间内第一个元素到达时创建窗口，当watermark超过12:06时，该窗口将被移除。
@@ -37,27 +37,27 @@ Flink中的窗口分为两种，一种窗口是基于时间驱动的（Time Wind
 #### 滚动窗口
 
 滚动窗口是根据固定时间或大笑进行切分，且窗口与窗口之间的数据不重叠。这种类型的窗口的最大特点就是简单，可能会导致某些有前后关系的数据计算结果不正确，而对于按照固定大小和周期统计某一指标的这种类型的窗口计算比较合适，实现起来比较方便。使用场景：每1分钟的PV等
-
+:::center
 ![img](https://ci.apache.org/projects/flink/flink-docs-release-1.10/fig/tumbling-windows.svg)
-
+:::
 #### 滑动窗口
 
 滑动窗口也是一种比较常见的窗口类型，其特点是在滚动窗口的基础上增加了窗口的滑动时间（slide time），且允许窗口数据发生重叠。当window size固定之后，窗口并不像滚动窗口按照window size 向前移动，而是根据设定的slide time向前移动。使用场景：每隔30s统计最近10分钟内的活跃用户数等
-
+:::center
 ![img](https://ci.apache.org/projects/flink/flink-docs-release-1.10/fig/sliding-windows.svg)
-
+:::
 #### 会话窗口
 
 会话窗口主要是将某段时间内活跃度较高的数据聚合成一个窗口进行计算，窗口触发条件是Session Gap，是指在规定的时间内如果诶呦数据活跃接入，则认为窗口结束，然后触发窗口计算结果。如果数据一直不断的进入窗口，也会导致窗口始终不触发的情况。与滑动窗口、滚动窗口不同的是，Session Windows不需要固定的window size和silde time，只需要定义session gap，来规定不活跃数据的时间上限即可。使用场景：IM会话消息及时回复统计等
-
+:::center
 ![img](https://ci.apache.org/projects/flink/flink-docs-release-1.10/fig/session-windows.svg)
-
+:::
 #### 全局窗口
 
 全局窗口将所有相同的key的数据分配到耽搁窗口中计算结果，窗口没有开始和结束时间，窗口借助于Triger来触发计算，如果不对Global Windows指定Triger，则窗口不会触发计算。因此全局窗口使用一定要慎重，需要非常明确自己在整个窗口中统计出的结果是什么，并指定对应的触发器同时还需要有指定对应的数据清理机制，否则数据将一直留在内存中。
-
+:::center
 ![img](https://ci.apache.org/projects/flink/flink-docs-release-1.10/fig/non-windowed.svg)
-
+:::
 
 ## Time(时间)
 
@@ -84,9 +84,9 @@ Flink 在流处理节目中支持不同的*时间*概念。
 *摄取时间*在概念上位于*事件时间*和*处理时间之间*。与*处理时间*相比 ，可以提供更可预测的结果。因为摄取时间使用稳定的时间戳（在源处分配一次），所以对记录的不同窗口 算子操作将引用相同的时间戳，而在*处理时间中，*每个窗口算子可以将记录分配给不同的窗口（基于本地系统时钟和任何运输延误）。与*事件时间*相比，*摄取时间*程序无法处理任何无序事件或后期数据，但程序不必指定如何生成*水印*。
 
 三者之间的关系，如下图所示：
-
+:::center
 ![img](https://flink.sojb.cn/fig/times_clocks.svg)
-
+:::
 代码示例：
 
 ```java
@@ -134,9 +134,9 @@ env.execute("ProcessingTime processing example")
 ```
 
 基于以上代码，假设数据源分别在时间，第13秒，第13秒和第16秒产生类型三条消息a。
-
+:::center
 ![image-20200329182946004](./imgs/image-20200329182946004.png)
-
+:::
 **场景一：**消息准时到达
 
 窗口1[5s-15s]：第15秒的时候结束:13秒产生的两条消息，总和为2；
@@ -144,9 +144,9 @@ env.execute("ProcessingTime processing example")
 窗口2[10s-20s]：第20秒的时候结束:13秒产生的两条消息，16秒产生的一条消息，总和为3；
 
 窗口3[15s-25s]：第25秒的时候结束:16秒产生的一条消息，总和为1。
-
+:::center
 ![image-20200329183213073](./imgs/image-20200329183213073.png)
-
+:::
 至此，需求完成了，是不是很开心？不要高兴的太早哦，问题来了。
 
 **场景二：**消息阻塞到达
@@ -158,9 +158,9 @@ env.execute("ProcessingTime processing example")
 窗口2[10-20]：第20秒的时候结束:13秒产生的两条消息，16秒产生的一条消息，19秒的一条消息，总和为3；
 
 窗口3[15-25]：第25秒的时候结束:16秒产生的一条消息，19秒一条消息，总和为2。
-
+:::center
 ![image-20200329183756275](./imgs/image-20200329183756275.png)
-
+:::
 
 
 是不是很郁闷。好好的一个程序竟然跑出了bug？
@@ -178,9 +178,9 @@ env.execute("ProcessingTime processing example")
 窗口2[10s-20s]：第20秒的时候结束:13秒产生的两条消息，16秒产生的一条消息，19秒的一条消息，发现eventTime在【10-20】之间，记为有效，总和为3；
 
 窗口3[15s-25s]：第25秒的时候结束:16秒产生的一条消息，19秒的一条消息，发现eventTime不在【15-25】之间，记为无效，总和为1。
-
+:::center
 ![image-20200329185333006](./imgs/image-20200329185333006.png)
-
+:::
 到此发现窗口2和3是正确的，窗口1的结果依然不正确。
 
 还不对？那该怎么办呢？
@@ -194,9 +194,9 @@ OK，明白了这个概念之后，我们就可以去设置Flink的水印时间�
 窗口2[10s-20s]：第20秒的时候结束:13秒产生的两条消息，16秒产生的一条消息，19秒的一条消息，发现eventTime在【10-20】之间，记为有效，总和为3；
 
 窗口3[15s-25s]：第25秒的时候结束:16秒产生的一条消息，19秒的一条消息，发现eventTime不在【15-25】之间，记为无效，总和为1。
-
+:::center
 ![image-20200329190956652](./imgs/image-20200329190956652.png)
-
+:::
 至此，我们得到了最后的正确的结果。
 
 如何去指定watermarker呢？只需要在创建source的时候声明watermarker即可，而水印设置的大小与准确性和实效性之间权衡。关于水印的更多内容，我们后面会做更多分享。
