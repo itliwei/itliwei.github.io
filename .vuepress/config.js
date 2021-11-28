@@ -153,6 +153,11 @@ module.exports = {
                 title: '日志规范',
                 collapsable: true,
                 path: '/technology/engineer/develop/logger',
+              },
+              {
+                title: 'REST接口规范',
+                collapsable: true,
+                path: '/technology/engineer/develop/rest',
               }
             ]
           },
