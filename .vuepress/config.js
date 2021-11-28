@@ -143,6 +143,11 @@ module.exports = {
                 title: '常用软件',
                 collapsable: true,
                 path: '/technology/engineer/develop/software',
+              },
+              {
+                title: '日志规范',
+                collapsable: true,
+                path: '/technology/engineer/develop/logger',
               }
             ]
           },
