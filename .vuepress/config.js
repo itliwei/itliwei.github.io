@@ -180,9 +180,14 @@ module.exports = {
                 path: '/technology/architecture/base/distributed',
               },
               {
-                title: '微服务理论',
+                title: '微服务架构',
                 collapsable: true,
                 path: '/technology/architecture/base/microservice',
+              },
+              {
+                title: '数仓架构',
+                collapsable: true,
+                path: '/technology/architecture/base/dw',
               },
             ]
           },
