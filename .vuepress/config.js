@@ -202,10 +202,15 @@ module.exports = {
             path: '/technology/architecture/case',
             children: [
               {
-                title: '在线IM设计',
+                title: '在线IM系统设计',
                 collapsable: true,
                 path: '/technology/architecture/case/imonline',
-              }
+              },
+              {
+                title: '分控系统设计',
+                collapsable: true,
+                path: '/technology/architecture/case/imonline',
+              },
             ]
           }
         ]
