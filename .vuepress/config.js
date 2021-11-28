@@ -195,6 +195,11 @@ module.exports = {
                 path: '/technology/architecture/base/distributed',
               },
               {
+                title: '一文了解负载均衡',
+                collapsable: true,
+                path: '/technology/architecture/base/loadblance',
+              },
+              {
                 title: '微服务架构',
                 collapsable: true,
                 path: '/technology/architecture/base/microservice',
