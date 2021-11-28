@@ -217,22 +217,22 @@ module.exports = {
               {
                 title: 'Spring源码',
                 collapsable: true,
-                path: '/technology/sourcecode/spring',
+                path: '/technology/sourcecode/framework/spring',
               },
               {
                 title: 'MyBatis源码',
                 collapsable: true,
-                path: '/technology/sourcecode/mybatis',
+                path: '/technology/sourcecode/framework/mybatis',
               },
               {
                 title: 'Netty源码',
                 collapsable: true,
-                path: '/technology/sourcecode/netty',
+                path: '/technology/sourcecode/framework/netty',
               },
               {
                 title: 'Dubbo源码',
                 collapsable: true,
-                path: '/technology/sourcecode/dubbo',
+                path: '/technology/sourcecode/framework/dubbo',
               }
             ]
           },
