@@ -1,6 +1,6 @@
 module.exports = {
   title: '架构师手册',
-  description: '耐心，专注，坚持。',
+  description: '坚持做正确的事',
   head: [
     ['link', {rel: 'shortcut icon', type: "image/x-icon", href: `/favicon.ico`}]
   ],
