@@ -200,12 +200,12 @@ module.exports = {
                 path: '/technology/architecture/base/loadblance',
               },
               {
-                title: '微服务架构',
+                title: '微服务架构演进历程',
                 collapsable: true,
                 path: '/technology/architecture/base/microservice',
               },
               {
-                title: '数仓架构',
+                title: '数仓架构演进历程',
                 collapsable: true,
                 path: '/technology/architecture/base/dw',
               },
