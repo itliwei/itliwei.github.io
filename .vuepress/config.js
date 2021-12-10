@@ -222,6 +222,11 @@ module.exports = {
                 path: '/technology/architecture/case/imonline',
               },
               {
+                title: '在线客服系统设计',
+                collapsable: true,
+                path: '/technology/architecture/case/imonline',
+              },
+              {
                 title: '风控系统设计',
                 collapsable: true,
                 path: '/technology/architecture/case/imonline',
