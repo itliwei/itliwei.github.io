@@ -358,7 +358,7 @@ module.exports = {
             title: '云原生',
             collapsable: true,
             path: '/topic/cloudnative'
-          }
+          },
         ]
       },
       {
@@ -367,9 +367,14 @@ module.exports = {
         path: '/daydayup/',
         children: [
            {
-            title: '2021个人总结',
+            title: '2021总结-个人篇',
             collapsable: true,
-            path: '/daydayup/sumary/2021'
+            path: '/daydayup/sumary/2021-self'
+          },
+          {
+            title: '2021总结-行业篇',
+            collapsable: true,
+            path: '/daydayup/sumary/2021-trade'
           },
           {
             title: '赌徒破产问题',
