@@ -361,6 +361,11 @@ module.exports = {
         collapsable: true,
         path: '/daydayup/',
         children: [
+           {
+            title: '2021个人总结',
+            collapsable: true,
+            path: '/daydayup/sumary/2021'
+          },
           {
             title: '赌徒破产问题',
             collapsable: true,
