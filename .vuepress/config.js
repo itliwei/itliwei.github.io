@@ -150,6 +150,11 @@ module.exports = {
                 path: '/technology/engineer/develop/software',
               },
               {
+                title: '编码规范',
+                collapsable: true,
+                path: '/technology/engineer/develop/code',
+              },
+              {
                 title: '日志规范',
                 collapsable: true,
                 path: '/technology/engineer/develop/logger',
