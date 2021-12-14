@@ -163,6 +163,11 @@ module.exports = {
                 title: 'REST接口规范',
                 collapsable: true,
                 path: '/technology/engineer/develop/rest',
+              },
+              {
+                title: '互联网性能名词',
+                collapsable: true,
+                path: '/technology/engineer/develop/names',
               }
             ]
           },
