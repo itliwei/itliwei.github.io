@@ -165,9 +165,19 @@ module.exports = {
                 path: '/technology/engineer/develop/rest',
               },
               {
-                title: '互联网性能名词',
+                title: '性能名词',
                 collapsable: true,
                 path: '/technology/engineer/develop/names',
+              },
+              {
+                title: '常用网站',
+                collapsable: true,
+                path: '/technology/engineer/develop/website',
+              },
+              {
+                title: '常用图形',
+                collapsable: true,
+                path: '/technology/engineer/develop/chart',
               }
             ]
           },
