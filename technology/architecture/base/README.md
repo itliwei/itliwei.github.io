@@ -15,6 +15,8 @@ Soft skills are always hard than hard skills. 软技能比硬技能难。
 
 ### 墨菲定理
 
+### 熵增定理
+
 
 ## 架构师之路
 
