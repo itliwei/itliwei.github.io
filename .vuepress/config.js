@@ -178,6 +178,26 @@ module.exports = {
                 title: '常用图形',
                 collapsable: true,
                 path: '/technology/engineer/develop/chart',
+              },
+              {
+                title: '常用工具',
+                collapsable: true,
+                path: '/technology/engineer/develop/tools',
+              },
+              {
+                title: '常见思维',
+                collapsable: true,
+                path: '/technology/engineer/develop/think',
+              },
+              {
+                title: '技术数据结构',
+                collapsable: true,
+                path: '/technology/engineer/develop/structure0',
+              },
+              {
+                title: '高级数据结构',
+                collapsable: true,
+                path: '/technology/engineer/develop/structure1',
               }
             ]
           },
@@ -228,6 +248,11 @@ module.exports = {
                 title: '数仓架构演进历程',
                 collapsable: true,
                 path: '/technology/architecture/base/dw',
+              },
+              {
+                title: '三大定律',
+                collapsable: true,
+                path: '/technology/architecture/base/theorem',
               },
             ]
           },
