@@ -15,7 +15,7 @@ stackoverflow是全世界最活跃的技术问答交流社区，如果你还不�
 
 [https://github.com/](https://github.com/)
 
-
+![img.png](./imgs/github-img.png)
 
 GitHub是一个面向开源及私有软件项目的托管平台。可以通过github审查代码、管理项目，同时与数百万IT技术人员一起交流，开发软件。
 
@@ -49,9 +49,10 @@ Hacker News是Y Combinator旗下的一个新闻频道，它的界面非常丑陋
 ## 5.DZone
 
 [https://dzone.com/](https://dzone.com/)
-​     
+![img.png](./imgs/img.png)
+​
 DZone.com是世界上最大的在线社区之一，全世界的开发技术人员通过共享知识来了解最新的技术趋势，了解新技术，方法和最佳实践。
-​     
+​
 DZone.com是世界最大的共享技术在线社区之一，在这里大家共享最新的技术知识和趋势，方法和最佳实践，所以想了解最心的技术，这个社区也是最好的渠道之一。
 
 ## 6.InfoQ
