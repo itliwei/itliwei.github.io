@@ -160,6 +160,11 @@ module.exports = {
                 path: '/technology/engineer/develop/junit',
               },
               {
+                title: '提交日志规范',
+                collapsable: true,
+                path: '/technology/engineer/develop/commit',
+              },
+              {
                 title: '日志规范',
                 collapsable: true,
                 path: '/technology/engineer/develop/logger',
