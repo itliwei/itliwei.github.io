@@ -172,7 +172,7 @@ module.exports = {
               {
                 title: 'CommitLog规范',
                 collapsable: true,
-                path: '/technology/engineer/develop/commit',
+                path: '/technology/engineer/develop/commitlog',
               },
               {
                 title: 'CodeReview规范',
