@@ -12,47 +12,47 @@
 
 针对每个方法都要有单元测试
 
-    包括private方法
+>包括private方法
 
 针对每行代码都要有单元测试
 
-    包括if else 里的判断
+>包括if else 里的逻辑，包括catch里的逻辑
 
 针对每个业务场景写
 
-    包括异常违法操作
+>包括异常合法的场景、不合法的场景,成功的场景、失败的场景
 
 ## 单元测试的步骤
 
   Setup，初始化，准备数据等
-    
-    初始化数据
-  
+
+>初始化数据
+
   Execute，调用要测试的方法、函数
-  
-    组装并执行测试方法
-  
+
+>组装并执行测试方法
+
   Verify，验证结果是否符合预期
-  
-    将结果进行验证，这里一定要Verify，不要System.out.println()结果。Verify是一个验证过程，这个会影响CI的执行。
-    
+
+​	将结果进行验证，这里一定要Verify，不要System.out.println()结果。Verify是一个验证过程，这个会影响CI的执行。
+
   Teardown，重置状态
-  
-    单测的数据不能产生其他影响，以免干扰到其他测试，所以测试结束后一定要重置状态。
-    
-    一般都是将数据做隔离，以免减少数据的干扰。
+
+>单测的数据不能产生其他影响，以免干扰到其他测试，所以测试结束后一定要重置状态。
+>
+>一般都是将数据做隔离，以免减少数据的干扰。
 
 ## 单元测试的规范
 
   1. 测试类与实际类在相同包下
-  
-  
+
+
   2. 测试类名称为实际类名称+Test
-  
+
     如：UserDaoTest
-  
+
   3. 测试类方法为test+实际类方法
-  
+
     如：testLogin
 
 ## 单元测试的技术
@@ -63,40 +63,40 @@
   对那些不容易构建的对象用一个虚拟对象来代替测试的方法就叫mock测试。以此来提高单测的"单一"特性。
 
   Mock一般用于：
-     
-     复杂的业务系统
-     
-     外部服务调用
-  
+
+>复杂的业务系统
+>
+>外部服务调用
+
   Mock的优点：
-  
-      团队可以并行工作
-      
-      为无法访问的资源编写测试
-      
-      系统进行隔离
-      
-      
+
+>团队可以并行工作
+>
+>为无法访问的资源编写测试
+>
+>系统进行隔离
+
+
 #### Mockito
 
   Mockito 是一个基于MIT协议的开源java测试框架。 Mockito区别于其他模拟框架的地方主要是允许开发者在没有建立“预期”时验证被测系统的行为。对mock对象的一个批评是测试代码与被测系统高度耦合，由于Mockito试图通过移除“期望规范”来去除expect-run-verify模式（期望--运行--验证模式），因此使耦合度降低到最低。
 
-    <dependency>  
-      <groupId>org.mockito</groupId>  
-      <artifactId>mockito-all</artifactId>  
-      <scope>test</scope>  
-    </dependency>  
-  
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <scope>test</scope>
+    </dependency>
+
   需要注意的语句：
-  
+
     Mockito.when(A).thenReturn(B);
-  
+
   需要注意的注解：
-  
+
     @InjectMocks
   说明：该注解跟@Autowired类似，注入一个服务。
-  
-    @Mock
+
+    @MockBean
   说明：注入一个服务，该服务会是“假对象”，并不会真正执行。
 
 ### 数据库H2
@@ -123,7 +123,7 @@ H2数据库是一个开源的关系型数据库。H2是一个采用java语言编
     spring.datasource.password=123456
     spring.datasource.driverClassName=org.h2.Driver
 
-  
+
 ### 内嵌Redis
 
   很多应用中会使用到Redis。而单测的时候如果把数据写入Redis或者读取Redis的数据，可能会造成一些脏数据，从而影响单测的结果。
@@ -133,27 +133,27 @@ H2数据库是一个开源的关系型数据库。H2是一个采用java语言编
           <groupId>com.github.kstyrc</groupId>
           <artifactId>embedded-redis</artifactId>
           <version>0.6</version>
-      </dependency>     
-      
+      </dependency>
+
   一般我们在写单元测试的时候，会在一个测试类中写很多的测试方法。那么我们一般会选择在@Before方法中启动RedisServer，在@After方法中进行close。
   启动与关闭：
-    
+
     redisServer = new RedisServer(6379);
     redisServer.start();
     // do something
     redisServer.stop();
-      
+
 ### 单元测试的问题
 
 #### 1.加载慢的问题
 
 原因分析：
-  
+
   首先每一次单测都需要重新加载数据，跑完一次程序就结束了，所以每次测试方法时都要重新加载数据。
-  
+
 实现方式：
 
-  
+
 
 #### 2.分库分表的问题
 
