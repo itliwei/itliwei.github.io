@@ -233,7 +233,19 @@ module.exports = {
                 path: '/technology/engineer/tech/flink',
               }
             ]
-          }
+          },
+          {
+            title: '代码工具',
+            collapsable: true,
+            path: '/technology/engineer/utils',
+            children: [
+              {
+                title: '比较两个JavaBean',
+                collapsable: true,
+                path: '/technology/engineer/utils/ObjCompareUtil',
+              },
+            ]
+          },
         ]
       },{
         title: '架构师工程手册',
