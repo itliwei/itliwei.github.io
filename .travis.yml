@@ -3,6 +3,7 @@ node_js:
   - lts/*
 before_install:
   - export TZ='Asia/Shanghai'
+  - npm cache clean --force
 install:
   - npm install
 script:
