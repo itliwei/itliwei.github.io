@@ -415,6 +415,33 @@ module.exports = {
         title: '读书笔记',
         collapsable: true,
         children: [
+          {
+            title: '技术',
+            collapsable: true,
+            path: '/books/tech',
+            children: [
+
+            ]
+          },
+          {
+            title: '人文',
+            collapsable: true,
+            path: '/books/culture',
+            children: [
+              {
+                title: '经济',
+                collapsable: true,
+                path: '/books/culture/ecnomy/',
+                children: [
+                  {
+                    title: '元宇宙',
+                    collapsable: true,
+                    path: '/books/culture/ecnomy/亏钱踩坑启示录'
+                  }
+                ]
+              }
+            ]
+          },
         ]
       },
       {
