@@ -414,7 +414,7 @@ module.exports = {
       }, {
         title: '读书笔记',
         collapsable: true,
-        path: '/books',
+        path: '/books/',
         children: [
           // {
           //   title: '技术',
@@ -424,7 +424,7 @@ module.exports = {
           {
             title: '人文',
             collapsable: true,
-            path: '/books/culture',
+            path: '/books/culture/',
             children: [
               {
                 title: '经济',
