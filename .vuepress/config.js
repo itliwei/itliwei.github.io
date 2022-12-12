@@ -415,11 +415,11 @@ module.exports = {
         title: '读书笔记',
         collapsable: true,
         children: [
-          {
-            title: '技术',
-            collapsable: true,
-            path: '/books/tech'
-          },
+          // {
+          //   title: '技术',
+          //   collapsable: true,
+          //   path: '/books/tech'
+          // },
           {
             title: '人文',
             collapsable: true,
