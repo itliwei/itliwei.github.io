@@ -414,6 +414,7 @@ module.exports = {
       }, {
         title: '读书笔记',
         collapsable: true,
+        path: '/books',
         children: [
           // {
           //   title: '技术',
@@ -431,7 +432,7 @@ module.exports = {
                 path: '/books/culture/ecnomy/',
                 children: [
                   {
-                    title: '元宇宙',
+                    title: '亏钱踩坑启示录',
                     collapsable: true,
                     path: '/books/culture/ecnomy/亏钱踩坑启示录'
                   }
