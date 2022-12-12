@@ -418,10 +418,7 @@ module.exports = {
           {
             title: '技术',
             collapsable: true,
-            path: '/books/tech',
-            children: [
-
-            ]
+            path: '/books/tech'
           },
           {
             title: '人文',
